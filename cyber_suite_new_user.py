@@ -1,8 +1,9 @@
 # FILE NAME: cyber_suite_new_user.py
 
-# NAME: 
-# DATE: 
-# BRIEF DESCRIPTION:  
+# NAME: Patrick Clark
+# DATE: 2/23/2025 
+# BRIEF DESCRIPTION: This program will ask the user for their name, id, and password. It will output a greeting with their name and id, 
+# then show their password in hidden characters.  
 
 
 
@@ -22,7 +23,16 @@
 
 ########## ENTER YER CODE BELOW THIS LINE ##########
 
+your_name = input('Please enter your name: ')
+user_id = int(input('Please enter your user id: '))
+password = input('Please enter your password: ')
 
+characters = len(password)
+
+print(f'Welcome, {your_name}. Your ID is {user_id}.')
+print()
+print(f'PASSWORD:')
+print("X" * characters)
 
 
 
@@ -79,6 +89,8 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 '''
 1. This project has a bit of a speed bump (converting the password to XXXXs). What was your thought process?
+# I knew I needed to find the number of characters that the password has since that is the only thing that can change the output. I found the len() function in 
+# the jupyter notebook. This does exactly what I needed. I assigned a variable to the len() of the password so I could then use it to multiply "X" in the output.  
 
 
 
