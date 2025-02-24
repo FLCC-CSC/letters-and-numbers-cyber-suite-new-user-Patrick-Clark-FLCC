@@ -25,13 +25,13 @@
 
 your_name = input('Please enter your name: ')
 user_id = int(input('Please enter your user id: '))
-password = input('Please enter your password: ')
+password = input('Please enter your password: \n')
 
 characters = len(password)
 
 print(f'Welcome, {your_name}. Your ID is {user_id}.')
 print()
-print(f'PASSWORD:')
+print(f'PASSWORD: ')
 print("X" * characters)
 
 
